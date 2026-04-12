@@ -31,7 +31,8 @@ while True:
                     amount = int(input("\nEnter amount to withdraw: "))
 
                     if amount <= 0:
-                        print("Invalid amount!")
+                        os.system("cls")
+                        print("\nInvalid amount!\n  ")
 
                     elif amount > balance:
                         os.system("cls")
@@ -61,4 +62,5 @@ while True:
                 print("Invalid option!")
 
     except:
+        os.system("cls")
         print("Invalid input! Please enter numbers only.")
